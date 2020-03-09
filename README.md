@@ -29,9 +29,16 @@ kubectl describe deployments kuard
 kubectl rollout history
 ```
 
+
 ### Updating Deployments
 ```
 kubectl rollout status
+```
+
+
+#### Updating a Container Image
+```
+kubectl rollout status deployments kuard
 ```
 
 ### Deployment Strategies
@@ -40,3 +47,12 @@ Two different strategies:
 - RollingUpdate
 
 #### Recreate Strategy
+
+#### RollingUpdate Strategy
+is capable of talking interchangeably with both a slightly older and a slightly newer version of your software.
+
+#### CONFIGURING A ROLLING UPDATE
+Setting maxSurge to 100% is equivalent to a blue/green deployment.
+
+#### Monitering a Deployment
+To sethow long the deployment controller should wait before transitioning into this state, use the spec.progressDeadlineSeconds field.
