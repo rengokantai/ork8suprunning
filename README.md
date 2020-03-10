@@ -6,6 +6,7 @@
 ```
 kubectl edit deployment/alpaca-prod
 ```
+
 ## Chapter 10.Deployments
 ### Your First Deployment
 #### Deployment Internals
