@@ -1,6 +1,11 @@
 # ork8suprunning
 
-
+## Chapter 7. Service Discovery
+### The Service Object
+#### Readiness Checks
+```
+kubectl edit deployment/alpaca-prod
+```
 ## Chapter 10.Deployments
 ### Your First Deployment
 #### Deployment Internals
