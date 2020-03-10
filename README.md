@@ -6,6 +6,8 @@
 ```
 kubectl edit deployment/alpaca-prod
 ```
+### Looking Beyond the Cluster
+
 
 ## Chapter 10.Deployments
 ### Your First Deployment
